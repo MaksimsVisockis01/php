@@ -1,0 +1,121 @@
+body, html {
+    background-color: #000000;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    gap: 25px;
+    width: fit-content;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 24px;
+    width: 200px;
+    color: white;
+}
+
+#title-container > h1 {
+    font-size: 50px;
+    margin-block: 10px;
+    font-family: SF-Pro-Display-Bold;
+}
+
+#title-container > a {
+    text-decoration: underline;
+    font-family: SF-Pro-Display-Regular;
+    text-decoration: underline;
+}
+
+#title-container > a:visited {
+    color: white;
+}
+
+#task-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+#task-container > div {
+    display: flex;
+    flex-direction: column;
+    width: 344px;
+    padding: 24px;
+    background-color: #262626;
+    border-radius: 16px;
+    gap: 24px;
+}
+
+#task-container > div > p {
+    margin: 0;
+    font-size: 37px;
+    color: white;
+    font-family: SF-Pro-Display-Bold;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.task > p,
+.task > h5 {
+    margin: 0;
+}
+
+.task > h5:first-child {
+    color: white;
+    font-family: SF-Pro-Display-Bold;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.task > p:nth-child(2) {
+    font-family: SF-Pro-Display-Regular;
+    line-height: 140%;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.pink {
+    background-color: #C94AA8;
+}
+.purple {
+    background-color: #7678D1 ;
+}
+.red {
+    background-color: #DA3A3A;
+}
+.blue {
+    background-color: #3F88E4;
+}
+.green {
+    background-color: #00B294;
+}
+
+.label {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+    border: solid 1px rgba(255, 255, 255, 0.75);
+    border-radius: 2px;
+    user-select: none;
+}
+.label > p {
+    font-family: SF-Pro-Display-Regular;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
